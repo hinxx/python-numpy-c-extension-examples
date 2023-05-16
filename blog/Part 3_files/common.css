@@ -1,0 +1,343 @@
+/*****************************************************************************
+ * CSS RESET
+ *****************************************************************************/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Colors:
+ * 
+ * #000000
+ * #061439
+ * #162756
+ * #2F4172
+ * #4F608F
+ * #7986AC
+ * #FFFFFF
+ * 
+ */
+
+/*****************************************************************************
+ * GENERAL 
+ *****************************************************************************/
+html {
+    overflow-y: scroll;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 21px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+body {
+    background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: normal;
+}
+
+body h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+ul {
+    margin-top: 0.66em;
+    margin-bottom: 0.66em;
+    list-style: circle inside;
+}
+
+ul li {
+    background-position: 0px center;
+    padding-left: 1em; 
+}
+
+ol {
+    margin-top: 0.66em;
+    margin-bottom: 0.66em;
+    list-style: decimal inside;
+}
+
+ol li {
+    background-position: 0px center;
+    padding-left: 1em; 
+}
+
+
+/*****************************************************************************
+ * TOP LEVEL ELEMENTS.
+ *****************************************************************************/
+#header-content, #top-menu, #page-content, #footer {
+    max-width: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*****************************************************************************
+ * PAGE HEADER
+ *****************************************************************************/
+#header {
+    background-color: #162756;
+    color: #FFFFFF;
+    padding: 1em;
+}
+
+#header-content img {
+    vertical-align: -0.70em;
+    margin-left: -101px;
+}
+
+#header h1 {
+    font-variant: small-caps;
+}
+
+/*****************************************************************************
+ * NAVIGATION LINKS
+ *****************************************************************************/
+#top-menu {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.nav-link {
+    font-variant: small-caps;
+    font-size: 16px;
+    color: #ffffff;
+    background: #2F4172;
+    border: 0.1em solid #2F4172;
+    padding: 0.5em 1.0em 0.5em 1.0em;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #4F608F;
+  text-decoration: none;
+}
+
+.nav-link-active {
+    color: #000000;
+    background: #FFFFFF;
+    border-left: 0.1em solid #FFFFFF;
+    border-right: 0.1em solid #FFFFFF;
+}
+
+.nav-link-active:hover {
+    color: #000000;
+    background: #FFFFFF;
+}
+
+/*****************************************************************************
+ * PAGE CONTENT
+ *****************************************************************************/
+#page-content {
+    background: #FFFFFF;
+}
+
+#page-content h1,h2,h3,h4,h5,h6 {
+    margin-top: 0.80em;
+    margin-bottom: 0.30em;
+}
+
+#page-content p {
+    max-width: 42em;
+    margin-top: 0.66em;
+    margin-bottom: 0.66em;
+}
+
+/*****************************************************************************
+ * PAGE FOOTER
+ *****************************************************************************/
+#footer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#footer p {
+    font-size: 80%;
+    padding-bottom: 1em;
+}
+
+
+/*****************************************************************************
+ * PAGE: ABOUT
+ *****************************************************************************/
+#profile-image {
+    float:left;
+    padding-right: 0.75em;
+    padding-bottom: 0.5em;
+
+}
+
+/*****************************************************************************
+ * PAGE: SOFTWARE
+ *****************************************************************************/
+#software-list dt {
+    margin-top: 0.66em;
+    margin-bottom: 0.66em;
+}
+
+#software-list a {
+    text-decoration: none;
+    color: #000000;
+    font-variant: small-caps;
+    padding: 0.33em 0.66em 0.33em 0.66em;
+    border-bottom: 1px solid #2F4172;
+}
+
+#software-list dd {
+    margin-left: 2em;
+    margin-bottom: 2em;
+    max-width: 42em;
+}
+
+/*****************************************************************************
+ * PAGE: BLOG
+ *****************************************************************************/
+
+#blog-menu {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#blog-menu a {
+    text-decoration: none;
+    font-variant: small-caps;
+    color: #FFFFFF;
+    background: #2F4172;
+    padding: 0.33em 0.66em 0.33em 0.66em;
+    border: 1px solid #2F4172;
+}
+
+#blog-menu a:hover {
+    background: #4F608F;
+    border: 1px solid #4F608F;
+}
+
+#blog-content hr {
+    max-width: 42em;
+    margin-left: 0;
+}
+
+#blog-content p {
+    max-width: 42em;
+}
+
+#blog-title {
+    font-variant: small-caps;
+}
+
+#blog-editing-info {
+    font-size: 80%;
+    padding-left: 1em;
+}
+
+p code {
+    color: #2F4172;
+    font-weight: bold;
+}
+
+.codehilite {
+    font-family: monospace;
+    margin-left: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-left: 1px solid #7986AC;
+}
+
+
+
+#blog-about-author {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+#blog-about-author h4 {
+    margin-left: 96px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top:0.33em;
+    padding-bottom: 0em;
+}
+
+#blog-author-image {
+    float: left;
+    padding-top: 0.2em;
+    padding-right: 0.75em;
+    padding-bottom: 0.5em;
+
+}
+
+/*
+     FILE ARCHIVED ON 19:01:52 Mar 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:09:52 May 16, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 147.818
+  exclusion.robots: 0.066
+  exclusion.robots.policy: 0.058
+  cdx.remote: 0.054
+  esindex: 0.01
+  LoadShardBlock: 120.747 (3)
+  PetaboxLoader3.datanode: 71.318 (4)
+  load_resource: 68.28
+  PetaboxLoader3.resolve: 40.659
+*/
